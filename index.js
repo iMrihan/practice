@@ -487,3 +487,25 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // console.log(found1);
 // console.log
+
+// let arr = [3, 1, 3, 3, 2];
+
+// let obj = {};
+// let result = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   let num = arr[i];
+//   if (obj[num] === undefined) {
+//     obj[num] = 1;
+//   } else obj[num] += 1;
+// }
+
+// for (key in obj) {
+//   if (result < obj[key]) {
+//     result = key;
+//   }
+// }
+
+// if (result > arr.length / 2) {
+//   console.log(result);
+// }
