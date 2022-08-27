@@ -509,3 +509,39 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 // if (result > arr.length / 2) {
 //   console.log(result);
 // }
+
+// Reverse an String with the help of stack;
+
+// let arr = [];
+// let currentVal = arr.length;
+
+// function push(newVal) {
+//   arr[currentVal] = newVal;
+//   currentVal++;
+// }
+
+// function pop() {
+//   let element = arr[currentVal - 1];
+//   currentVal--;
+//   arr.length = currentVal;
+
+//   return element;
+// }
+
+// let str = "anil";
+
+// let result = "";
+
+// function reverseString(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     arr.push(str[i]);
+//   }
+
+//   for (let i = 0; i < str.length; i++) {
+//     result += arr.pop();
+//   }
+// }
+
+// reverseString(str);
+
+// console.log(result);
