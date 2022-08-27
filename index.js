@@ -487,25 +487,3 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // console.log(found1);
 // console.log
-
-function patternPrint(n, m) {
-  let result = [];
-  let l = 0;
-
-  for (let i = 0; i < n; i++) {
-    let x = [];
-    let t = l;
-    while (t > 0) {
-      x.push("#");
-      t--;
-    }
-    for (let j = l + 1; j <= m; j++) {
-      x.push("*");
-    }
-    result.push(x.join(""));
-    l++;
-  }
-  return result.join("\n");
-}
-
-console.log(patternPrint(6, 5));
