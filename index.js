@@ -432,9 +432,9 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 // ####*
 // #####
 
-// function deef(n, m) {
+// function patternPrint(n, m) {
 //   var l = 0;
-//   var str = [];
+//   var arr = [];
 //   for (let i = 0; i < n; i++) {
 //     var x = [];
 //     var t = l;
@@ -445,13 +445,13 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 //     for (let j = l + 1; j <= m; j++) {
 //       x.push("*");
 //     }
-//     str.push(x.join(""));
+//     arr.push(x.join(""));
 //     l++;
 //   }
-//   return str.join("\n");
+//   return arr.join("\n");
 // }
 
-// console.log(deef(6, 5));
+// console.log(patternPrint(6, 5));
 
 // 54321
 // 4321
@@ -487,3 +487,25 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // console.log(found1);
 // console.log
+
+function patternPrint(n, m) {
+  let result = [];
+  let l = 0;
+
+  for (let i = 0; i < n; i++) {
+    let x = [];
+    let t = l;
+    while (t > 0) {
+      x.push("#");
+      t--;
+    }
+    for (let j = l + 1; j <= m; j++) {
+      x.push("*");
+    }
+    result.push(x.join(""));
+    l++;
+  }
+  return result.join("\n");
+}
+
+console.log(patternPrint(6, 5));
