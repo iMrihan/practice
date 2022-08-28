@@ -480,13 +480,13 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // console.log(max);
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
-let found1 = arr.find((el) => el > 3);
-let found2 = arr.filter((el) => el > 3);
+// let found1 = arr.find((el) => el > 3);
+// let found2 = arr.filter((el) => el > 3);
 
-console.log(found1);
-console.log(found2);
+// console.log(found1);
+// console.log(found2);
 
 // let arr = [3, 1, 3, 3, 2];
 
