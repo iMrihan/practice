@@ -545,3 +545,34 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 // reverseString(str);
 
 // console.log(result);
+// let Product = [{ name: "rihan" }];
+
+// Route.get("", async (res, req) => {
+//   try {
+//     let result = await Product.find();
+
+//     res.send(200).json({
+//       result: result,
+//     });
+//   } catch (error) {
+//     console.log(error);
+
+//     res.send(500).send(
+//       json({
+//         error: error,
+//       })
+//     );
+//   }
+// });
+
+export default function App() {
+  const [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    setInterval(() => {
+      setDate(new Date());
+    }, 1000);
+  }, []);
+
+  return <div>{date.toString()}</div>;
+}
