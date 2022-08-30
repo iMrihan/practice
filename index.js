@@ -97,17 +97,17 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // console.log(myMap([1, 2, 3, 4, 5], (el) => el * 3));
 
-function myFilter(array, callback) {
-  let out = [];
+// function myFilter(array, callback) {
+//   let out = [];
 
-  for (let i = 0; i < array.length; i++) {
-    let result = callback(array[i], i, array);
-    if (result) {
-      out.push(array[i]);
-    }
-  }
-  return out;
-}
+//   for (let i = 0; i < array.length; i++) {
+//     let result = callback(array[i], i, array);
+//     if (result) {
+//       out.push(array[i]);
+//     }
+//   }
+//   return out;
+// }
 
 // console.log(myFilter([1, 2, 3, 4, 5], (el) => el % 2 === 0));
 
