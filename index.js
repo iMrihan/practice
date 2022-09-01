@@ -629,3 +629,15 @@ function enqueue(newVal) {
 function display() {
   console.log(queue);
 }
+
+function dequeue() {
+  if (currentSize > 0) {
+    for (let i = 0; i < queue.length; i++) {
+      queue[i] = queue[i + 1];
+    }
+    currentSize--;
+    queue.length = currentSize;
+  } else {
+    alert("Stack is already empty");
+  }
+}
