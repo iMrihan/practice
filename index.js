@@ -576,3 +576,35 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 //   return <div>{date.toString()}</div>;
 // }
+
+class Stack {
+  item = [];
+  currentSize;
+  maxSize;
+  constructor(size) {
+    this.maxSize = size;
+    this.currentSize = this.item.length;
+  }
+
+  push(newVal) {
+    if (this.currentSize >= this.maxSize) {
+      alert("Stack is full");
+    } else {
+      this.item[this.currentSize] = newVal;
+      this.currentSize++;
+    }
+  }
+
+  pop() {
+    if (this.currentSize < 1) {
+      alert("Stack is already Empty");
+    } else {
+      this.currentSize--;
+      this.item.length = this.currentSize;
+    }
+  }
+
+  display() {
+    console.log(item);
+  }
+}
