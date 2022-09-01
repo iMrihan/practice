@@ -577,6 +577,8 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 //   return <div>{date.toString()}</div>;
 // }
 
+// Stack with Class in JavaScript
+
 // class Stack {
 //   item = [];
 //   currentSize;
