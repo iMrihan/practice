@@ -565,14 +565,14 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 //   }
 // });
 
-export default function App() {
-  const [date, setDate] = useState(new Date());
+// export default function App() {
+//   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    setInterval(() => {
-      setDate(new Date());
-    }, 1000);
-  }, []);
+//   useEffect(() => {
+//     setInterval(() => {
+//       setDate(new Date());
+//     }, 1000);
+//   }, []);
 
-  return <div>{date.toString()}</div>;
-}
+//   return <div>{date.toString()}</div>;
+// }
