@@ -605,6 +605,8 @@ class Stack {
   }
 
   display() {
-    console.log(item);
+    console.log(this.item);
   }
 }
+
+let stack = new Stack(5);
