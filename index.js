@@ -613,31 +613,31 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // let stack = new Stack(5);
 
-let queue = [];
-let currentSize = queue.length;
-let maxSize = 5;
+// let queue = [];
+// let currentSize = queue.length;
+// let maxSize = 5;
 
-function enqueue(newVal) {
-  if (currentSize >= maxSize) {
-    alert("queue is already full");
-  } else {
-    queue[currentSize] = newVal;
-    currentSize++;
-  }
-}
+// function enqueue(newVal) {
+//   if (currentSize >= maxSize) {
+//     alert("queue is already full");
+//   } else {
+//     queue[currentSize] = newVal;
+//     currentSize++;
+//   }
+// }
 
-function display() {
-  console.log(queue);
-}
+// function display() {
+//   console.log(queue);
+// }
 
-function dequeue() {
-  if (currentSize > 0) {
-    for (let i = 0; i < queue.length; i++) {
-      queue[i] = queue[i + 1];
-    }
-    currentSize--;
-    queue.length = currentSize;
-  } else {
-    alert("Stack is already empty");
-  }
-}
+// function dequeue() {
+//   if (currentSize > 0) {
+//     for (let i = 0; i < queue.length; i++) {
+//       queue[i] = queue[i + 1];
+//     }
+//     currentSize--;
+//     queue.length = currentSize;
+//   } else {
+//     alert("Stack is already empty");
+//   }
+// }
