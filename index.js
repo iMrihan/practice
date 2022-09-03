@@ -641,3 +641,27 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 //     alert("Stack is already empty");
 //   }
 // }
+
+// Binary Search with the help of recursive approach
+
+let data = [2, 4, 7, 24, 28, 70, 94];
+
+let start = 0;
+let end = data.length - 1;
+let res = -1;
+let find = 24;
+
+function recursiveBinary(data, start, end) {
+  let mid = start + Math.floor((end - start) / 2);
+
+  if (data[mid] == find) {
+    res = mid;
+    return res;
+  } else if (data[mid] < find) {
+    recursiveBinary(data, mid + 1, end);
+  } else {
+    recursiveBinary(data, mid, mid - 1);
+  }
+}
+
+console.log(recursiveBinary(data, start, end));
