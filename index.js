@@ -579,52 +579,52 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 
 // Stack with Class in JavaScript
 
-class Stack {
-  item = [];
-  currentSize;
-  maxSize;
-  constructor(size) {
-    this.maxSize = size;
-    this.currentSize = this.item.length;
-  }
+// class Stack {
+//   item = [];
+//   currentSize;
+//   maxSize;
+//   constructor(size) {
+//     this.maxSize = size;
+//     this.currentSize = this.item.length;
+//   }
 
-  push(newVal) {
-    if (this.currentSize >= this.maxSize) {
-      alert("Stack is full");
-    } else {
-      this.item[this.currentSize] = newVal;
-      this.currentSize++;
-    }
-  }
+//   push(newVal) {
+//     if (this.currentSize >= this.maxSize) {
+//       alert("Stack is full");
+//     } else {
+//       this.item[this.currentSize] = newVal;
+//       this.currentSize++;
+//     }
+//   }
 
-  pop() {
-    if (this.currentSize < 1) {
-      alert("Stack is already Empty");
-    } else {
-      this.currentSize--;
-      this.item.length = this.currentSize;
-    }
-  }
+//   pop() {
+//     if (this.currentSize < 1) {
+//       alert("Stack is already Empty");
+//     } else {
+//       this.currentSize--;
+//       this.item.length = this.currentSize;
+//     }
+//   }
 
-  display() {
-    console.log(this.item);
-  }
-}
+//   display() {
+//     console.log(this.item);
+//   }
+// }
 
-let stack = new Stack(5);
+// let stack = new Stack(5);
 
-let queue = [];
-let currentSize = queue.length;
-let maxSize = 5;
+// let queue = [];
+// let currentSize = queue.length;
+// let maxSize = 5;
 
-function enqueue(newVal) {
-  if (currentSize >= maxSize) {
-    alert("queue is already full");
-  } else {
-    queue[currentSize] = newVal;
-    currentSize++;
-  }
-}
+// function enqueue(newVal) {
+//   if (currentSize >= maxSize) {
+//     alert("queue is already full");
+//   } else {
+//     queue[currentSize] = newVal;
+//     currentSize++;
+//   }
+// }
 
 function display() {
   console.log(queue);
