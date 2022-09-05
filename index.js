@@ -688,3 +688,22 @@ myForEach([1, 2, 3, 4, 5], (el, i, array) => {
 // insertionSort(arr);
 
 // console.log(arr);
+
+// Bubble Sort with the help of Recursion
+
+let arr = [12, 34, 5, 4, 0, 25];
+
+function recursionBubble(data, count) {
+  if (count === 1) {
+    return;
+  }
+  for (let i = 0; i < count; i++) {
+    if (data[i] > data[i + 1]) {
+      [data[i], data[i + 1]] = [data[i + 1], data[i]];
+    }
+  }
+  recursionBubble(data, count - 1);
+}
+
+recursionBubble(arr, arr.length);
+console.log(arr);
